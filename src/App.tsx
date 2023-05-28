@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import Nav from './Nav/Nav'
+import Main from './Main/Main'
+import SplitScreen from './SplitScreen/SplitScreen.tsx'
 
 
 function App() {
@@ -6,9 +9,10 @@ function App() {
 
   return (
     <>
-      <main>
-        <p>Text</p>
-      </main>
+      <SplitScreen>
+        <Nav />
+        <Main />
+      </SplitScreen>
     </>
   )
 }
