@@ -7,12 +7,9 @@ export default function SplitScreen({
 
     return(
         <>
-            <div className="bg-light border">
-                Header
-            </div>
-            <Stack direction="horizontal" className='mx-auto'>
-                <div className='col-3'>{left}</div>
-                <div className='col-9'>{right}</div>
+            <Stack direction="horizontal" className='mx-auto vh-100 w-75'>
+                <div className='col-3 bg-light border vh-100' >{left}</div>
+                <div className='col-9 bg-light border vh-100'>{right}</div>
             </Stack>
         </>
     )
